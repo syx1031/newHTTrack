@@ -1,58 +1,29 @@
-HTTrack Website Copier, Offline Browser for Windows and Unix
-Copyright (C) 1998-2017 Xavier Roche and other contributors
+# HTTrack Website Copier - Development Repository
 
-Welcome to HTTrack Website Copier!
+## About
+_Copy websites to your computer (Offline browser)_
 
+<img src="http://www.httrack.com/htsw/screenshot_w1.jpg" width="34%">
 
-Information:
+*HTTrack* is an _offline browser_ utility, allowing you to download a World Wide website from the Internet to a local directory, building recursively all directories, getting html, images, and other files from the server to your computer.
+ 
+*HTTrack* arranges the original site's relative link-structure. Simply open a page of the "mirrored" website in your browser, and you can browse the site from link to link, as if you were viewing it online.
 
-The folder html/ contains the documentation
-You might want to read these files, especially for installing HTTrack:
-  - See INSTALL file for installation information (NO WARRANTY)
-  - See license.txt file for license information
+HTTrack can also update an existing mirrored site, and resume interrupted downloads. HTTrack is fully configurable, and has an integrated help system.
 
+*WinHTTrack* is the Windows 2000/XP/Vista/Seven release of HTTrack, and *WebHTTrack* the Linux/Unix/BSD release. 
 
-Contacting us:
+## Website
 
-If you want to ask any question, feel free to contact us!
-email: httrack@httrack.com
+*Main Website:*
+http://www.httrack.com/
 
+## Compile trunk release
+```sh
+git clone https://github.com/xroche/httrack.git --recurse
+cd httrack
+./configure --prefix=$HOME/usr && make -j8 && make install
+```
 
-Donations:
-
-HTTrack Website Copier is free software, but if you can, please donate to the Free Software Foundation (FSF) to support free software!
-
-(Europe)
-http://www.fsfeurope.org/help/donate.html
-
-(World)
-http://www.fsf.org/help/donate.html
-
-
-Engine limits:
-
-These are the principals limits of HTTrack for that moment. Note that we did not heard about any other utility
-that would have solved them.
-
-- Several scripts generating complex filenames may not find them (ex: img.src='image'+a+Mobj.dst+'.gif')
-- Some java classes may not find some files on them (class included)
-- Cgi-bin links may not work properly in some cases (parameters needed). To avoid them: use filters like -*cgi-bin*
-
-
-Advanced options:
-
-These options may not be necessary for a normal usage. But they can solve several problems.
-
-- If you need more than 100,000 links: -#L1000000 (1,000,000 links)
-- If you need more than 500 filters: -#F1000 (1,000 filters)
-- If you need transfer rate statistics every minutes: -#Z
-- If you need transfer operations statistics every minutes: -#T
-- If you want log files to be refreshed after every line: -#f
-
-
-Thank you!
-
-
-Have fun with HTTrack Website Copier!
-The authors
-
+# newHTTrack
+A new HTTrack modified by syx1031
