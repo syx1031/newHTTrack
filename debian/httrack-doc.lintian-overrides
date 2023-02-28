@@ -1,0 +1,2 @@
+httrack-doc: extra-license-file usr/share/httrack/html/license.txt
+httrack-doc: package-contains-documentation-outside-usr-share-doc usr/share/httrack/*

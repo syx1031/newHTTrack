@@ -1,0 +1,3 @@
+[submodule "src/coucal"]
+	path = src/coucal
+	url = https://github.com/xroche/coucal.git
