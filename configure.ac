@@ -1,6 +1,6 @@
 AC_PREREQ(2.59)
 
-AC_INIT([httrack], [3.49.4], [roche+packaging@httrack.com], [httrack], [http://www.httrack.com/])
+AC_INIT([newhttrack], [0.0.1], [shangyuxuan@zju.edu.cn])
 AC_COPYRIGHT([
 HTTrack Website Copier, Offline Browser for Windows and Unix
 Copyright (C) 1998-2015 Xavier Roche and other contributors
@@ -25,13 +25,15 @@ emails addresses, or collecting any other private information on persons.
 This would disgrace our work, and spoil the many hours we spent on it.
 
 Please visit our Website: http://www.httrack.com
+
+newHTTrack: a httrack modified by syx1031 for illegal advertisement's identification.
 ])
 
 AC_CONFIG_SRCDIR(src/httrack.c)
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)
 AM_INIT_AUTOMAKE([subdir-objects])
-VERSION_INFO="2:49:0"
+VERSION_INFO="1:0:0"
 AM_MAINTAINER_MODE
 AC_USE_SYSTEM_EXTENSIONS
 
