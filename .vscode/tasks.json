@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "config",
+            "command": "autoreconf -if && ./configure",
+            "type": "shell"
+        },
+        {
+            "label": "build",
+            "command": "make",
+            "args": ["-j8"],
+            "type": "shell"
+        },
+        {
+            "label": "install",
+            "command": "sudo make install",
+            "type": "shell"
+        },
+        /*{
+            "label": "debug",
+            "command": "libtool",
+            "args": ["--mode=execute gdb ./src/httrack --interpreter=mi"],
+            "type": "shell"
+        },
+        {
+            "label": "debug_test",
+            "command": "gdb",
+            "args": ["../test/hello --interpreter=mi"],
+            "type": "shell"
+        },*/
+        {
+            "label": "clean",
+            "command": "make",
+            "args": ["clean"],
+            "type": "shell"
+        },
+        {
+            "label": "uninstall",
+            "command": "sudo make uninstall",
+            "type": "shell"
+        }
+    ]
+}

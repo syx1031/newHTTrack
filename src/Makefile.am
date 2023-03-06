@@ -40,9 +40,9 @@ httrack_CFLAGS = $(AM_CFLAGS) $(CFLAGS_PIE)
 proxytrack_CFLAGS = $(AM_CFLAGS) $(CFLAGS_PIE) -DNO_MALLOCT -DZLIB_CONST -DHTS_INTHASH_USES_MD5
 htsserver_CFLAGS = $(AM_CFLAGS) $(CFLAGS_PIE) -DZLIB_CONST -DHTS_INTHASH_USES_MD5
 
-httrack_LDFLAGS = $(AM_LDFLAGS) $(LDFLAGS_PIE)
-proxytrack_LDFLAGS = $(AM_LDFLAGS) $(LDFLAGS_PIE)
-htsserver_LDFLAGS = $(AM_LDFLAGS) $(LDFLAGS_PIE)
+httrack_LDFLAGS = $(AM_LDFLAGS) $(LDFLAGS_PIE) -no-install
+proxytrack_LDFLAGS = $(AM_LDFLAGS) $(LDFLAGS_PIE) -no-install
+htsserver_LDFLAGS = $(AM_LDFLAGS) $(LDFLAGS_PIE) -no-install
 
 lib_LTLIBRARIES = libhttrack.la libhtsjava.la
 
